@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Overlay, Modal } from './Modal.styled';
 
-export const ModalImg = ({closeModal, children}) => {
+export const ModalWindow = ({closeModal, children}) => {
   const handleKeyDown = e => {
     if ( e.code === 'Escape') {
       closeModal();
@@ -28,6 +28,6 @@ export const ModalImg = ({closeModal, children}) => {
   );
 }
 
-ModalImg.propTypes = {
+ModalWindow.propTypes = {
   closeModal: PropTypes.func.isRequired,
 };

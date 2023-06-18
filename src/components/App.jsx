@@ -8,7 +8,7 @@ import { Searchbar } from './Searchbar/Searchbar';
 import { ImageGallery } from './ImageGallery/ImageGallery';
 import { Loader } from './Loader/Loader';
 import { Button } from './Button/Button';
-import { ModalImg } from './Modal/Modal';
+import { ModalWindow } from './Modal/Modal';
 import { AppWrap } from './App.styled';
 
 export const App = () => {
@@ -83,9 +83,9 @@ export const App = () => {
 
         {showModal && (
           createPortal(
-            <ModalImg closeModal={toggleModal}>
+            <ModalWindow closeModal={toggleModal}>
             <img src={urlBig} alt={alt} />
-            </ModalImg>, document.body)
+            </ModalWindow>, document.body)
           
         )}
 
